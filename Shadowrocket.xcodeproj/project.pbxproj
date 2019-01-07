@@ -35,8 +35,10 @@
 		047787C921E381D500FDBD8D /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787C821E381D500FDBD8D /* AntiAntiDebug.m */; };
 		047787CC21E381D500FDBD8D /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 047787CB21E381D500FDBD8D /* fishhook.c */; };
 		047787CE21E381D500FDBD8D /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787CD21E381D500FDBD8D /* fishhook.h */; };
-		047787D021E381D500FDBD8D /* ShadowrocketDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787CF21E381D500FDBD8D /* ShadowrocketDylib.h */; };
-		047787D221E381D500FDBD8D /* ShadowrocketDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787D121E381D500FDBD8D /* ShadowrocketDylib.m */; };
+		047787E321E3826800FDBD8D /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787E221E3826800FDBD8D /* PacketTunnelProvider.m */; };
+		047787E821E3826800FDBD8D /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787DF21E3826800FDBD8D /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		047787EF21E3838300FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
+		047787F121E383B500FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0477878A21E381D500FDBD8D;
 			remoteInfo = ShadowrocketDylib;
+		};
+		047787E621E3826800FDBD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0477876F21E381D500FDBD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047787DE21E3826800FDBD8D;
+			remoteInfo = PacketTunnel;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +67,17 @@
 			files = (
 				0477878C21E381D500FDBD8D /* libShadowrocketDylib.dylib in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047787EC21E3826800FDBD8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				047787E821E3826800FDBD8D /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -99,8 +119,13 @@
 		047787C821E381D500FDBD8D /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
 		047787CB21E381D500FDBD8D /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
 		047787CD21E381D500FDBD8D /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
-		047787CF21E381D500FDBD8D /* ShadowrocketDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowrocketDylib.h; sourceTree = "<group>"; };
-		047787D121E381D500FDBD8D /* ShadowrocketDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowrocketDylib.m; sourceTree = "<group>"; };
+		047787DF21E3826800FDBD8D /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		047787E121E3826800FDBD8D /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		047787E221E3826800FDBD8D /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		047787E421E3826800FDBD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047787E521E3826800FDBD8D /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		047787EE21E3838300FDBD8D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		047787F021E3839E00FDBD8D /* Shadowrocket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shadowrocket.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047787F121E383B500FDBD8D /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +147,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		047787DC21E3826800FDBD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787EF21E3838300FDBD8D /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -129,6 +163,7 @@
 			children = (
 				0477877C21E381D500FDBD8D /* Shadowrocket */,
 				0477879621E381D500FDBD8D /* ShadowrocketDylib */,
+				047787E021E3826800FDBD8D /* PacketTunnel */,
 				0477878F21E381D500FDBD8D /* Frameworks */,
 				0477877B21E381D500FDBD8D /* Products */,
 			);
@@ -139,6 +174,7 @@
 			children = (
 				0477877A21E381D500FDBD8D /* Shadowrocket.app */,
 				0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */,
+				047787DF21E3826800FDBD8D /* PacketTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +182,7 @@
 		0477877C21E381D500FDBD8D /* Shadowrocket */ = {
 			isa = PBXGroup;
 			children = (
+				047787F021E3839E00FDBD8D /* Shadowrocket.entitlements */,
 				0477877D21E381D500FDBD8D /* icon.png */,
 				0477878521E381D500FDBD8D /* Info.plist */,
 				0477877E21E381D500FDBD8D /* Scripts */,
@@ -182,6 +219,7 @@
 		0477878F21E381D500FDBD8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				047787EE21E3838300FDBD8D /* NetworkExtension.framework */,
 				0477879021E381D500FDBD8D /* JavaScriptCore.framework */,
 				0477879221E381D500FDBD8D /* Foundation.framework */,
 				0477879421E381D500FDBD8D /* UIKit.framework */,
@@ -192,8 +230,6 @@
 		0477879621E381D500FDBD8D /* ShadowrocketDylib */ = {
 			isa = PBXGroup;
 			children = (
-				047787CF21E381D500FDBD8D /* ShadowrocketDylib.h */,
-				047787D121E381D500FDBD8D /* ShadowrocketDylib.m */,
 				0477879721E381D500FDBD8D /* Logos */,
 				0477879B21E381D500FDBD8D /* Config */,
 				047787A821E381D500FDBD8D /* Trace */,
@@ -280,6 +316,17 @@
 			name = fishhook;
 			sourceTree = "<group>";
 		};
+		047787E021E3826800FDBD8D /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				047787E121E3826800FDBD8D /* PacketTunnelProvider.h */,
+				047787E221E3826800FDBD8D /* PacketTunnelProvider.m */,
+				047787E421E3826800FDBD8D /* Info.plist */,
+				047787E521E3826800FDBD8D /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -290,7 +337,6 @@
 				047787A121E381D500FDBD8D /* MDCycriptManager.h in Headers */,
 				047787A521E381D500FDBD8D /* MDMethodTrace.h in Headers */,
 				047787CE21E381D500FDBD8D /* fishhook.h in Headers */,
-				047787D021E381D500FDBD8D /* ShadowrocketDylib.h in Headers */,
 				047787C221E381D500FDBD8D /* LLDBTools.h in Headers */,
 				0477879D21E381D500FDBD8D /* MDConfigManager.h in Headers */,
 				047787BC21E381D500FDBD8D /* OCSelectorTrampolines.h in Headers */,
@@ -311,11 +357,13 @@
 				0477877621E381D500FDBD8D /* Resources */,
 				0477877721E381D500FDBD8D /* CopyFiles */,
 				0477877821E381D500FDBD8D /* ShellScript */,
+				047787EC21E3826800FDBD8D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0477878E21E381D500FDBD8D /* PBXTargetDependency */,
+				047787E721E3826800FDBD8D /* PBXTargetDependency */,
 			);
 			name = Shadowrocket;
 			productName = Shadowrocket;
@@ -340,6 +388,24 @@
 			productReference = 0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		047787DE21E3826800FDBD8D /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047787E921E3826800FDBD8D /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				047787DB21E3826800FDBD8D /* Sources */,
+				047787DC21E3826800FDBD8D /* Frameworks */,
+				047787DD21E3826800FDBD8D /* Resources */,
+				047787ED21E3833400FDBD8D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = 047787DF21E3826800FDBD8D /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -351,9 +417,37 @@
 				TargetAttributes = {
 					0477877921E381D500FDBD8D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
 					};
 					0477878A21E381D500FDBD8D = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					047787DE21E3826800FDBD8D = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -371,6 +465,7 @@
 			targets = (
 				0477877921E381D500FDBD8D /* Shadowrocket */,
 				0477878A21E381D500FDBD8D /* ShadowrocketDylib */,
+				047787DE21E3826800FDBD8D /* PacketTunnel */,
 			);
 		};
 /* End PBXProject section */
@@ -381,6 +476,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0477878221E381D500FDBD8D /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047787DD21E3826800FDBD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +504,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
 		};
 		0477877821E381D500FDBD8D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -419,7 +521,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign\n";
 		};
 		0477878621E381D500FDBD8D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -438,6 +540,23 @@
 			shellPath = /bin/sh;
 			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
 		};
+		047787ED21E3833400FDBD8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\ncp -R -H \"${SRCROOT}/${PROJECT_NAME}/TargetApp/Plugins/${PRODUCT_NAME}.appex\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleIdentifier ${PRODUCT_BUNDLE_IDENTIFIER}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex/Info.plist\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,7 +574,6 @@
 				047787A321E381D500FDBD8D /* MDCycriptManager.m in Sources */,
 				047787AC21E381D500FDBD8D /* a1a2-selectortramps-arm64.s in Sources */,
 				047787AA21E381D500FDBD8D /* a1a2-selectortramps-arm.s in Sources */,
-				047787D221E381D500FDBD8D /* ShadowrocketDylib.m in Sources */,
 				047787B021E381D500FDBD8D /* a1a2-selectortramps-x86_64.s in Sources */,
 				047787BA21E381D500FDBD8D /* OCMethodTrace.m in Sources */,
 				0477879F21E381D500FDBD8D /* MDConfigManager.m in Sources */,
@@ -472,6 +590,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		047787DB21E3826800FDBD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787E321E3826800FDBD8D /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -479,6 +605,11 @@
 			isa = PBXTargetDependency;
 			target = 0477878A21E381D500FDBD8D /* ShadowrocketDylib */;
 			targetProxy = 0477878D21E381D500FDBD8D /* PBXContainerItemProxy */;
+		};
+		047787E721E3826800FDBD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047787DE21E3826800FDBD8D /* PacketTunnel */;
+			targetProxy = 047787E621E3826800FDBD8D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -599,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWFM3K5AG4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -660,6 +792,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = AWFM3K5AG4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -714,7 +847,9 @@
 		047787D921E381D500FDBD8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Shadowrocket/Shadowrocket.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68B3H97TK;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Shadowrocket/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -725,7 +860,7 @@
 				MONKEYDEV_TARGET_APP = Optional;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwjack.Shadowrocket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjackc.Shadowrocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -734,7 +869,9 @@
 		047787DA21E381D500FDBD8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Shadowrocket/Shadowrocket.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68B3H97TK;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Shadowrocket/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -745,8 +882,48 @@
 				MONKEYDEV_TARGET_APP = Optional;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwjack.Shadowrocket;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjackc.Shadowrocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047787EA21E3826800FDBD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68B3H97TK;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjackc.Shadowrocket.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047787EB21E3826800FDBD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68B3H97TK;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjackc.Shadowrocket.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -777,6 +954,15 @@
 			buildConfigurations = (
 				047787D921E381D500FDBD8D /* Debug */,
 				047787DA21E381D500FDBD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047787E921E3826800FDBD8D /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047787EA21E3826800FDBD8D /* Debug */,
+				047787EB21E3826800FDBD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -39,6 +39,11 @@
 		047787E821E3826800FDBD8D /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787DF21E3826800FDBD8D /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		047787EF21E3838300FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
 		047787F121E383B500FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
+		047787F821E3842900FDBD8D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787F721E3842900FDBD8D /* NotificationCenter.framework */; };
+		047787FC21E3842900FDBD8D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787FB21E3842900FDBD8D /* TodayViewController.m */; };
+		047787FF21E3842900FDBD8D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047787FD21E3842900FDBD8D /* MainInterface.storyboard */; };
+		0477880321E3842900FDBD8D /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787F621E3842900FDBD8D /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0477880821E3843C00FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 047787DE21E3826800FDBD8D;
 			remoteInfo = PacketTunnel;
+		};
+		0477880121E3842900FDBD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0477876F21E381D500FDBD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047787F521E3842900FDBD8D;
+			remoteInfo = Today;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +87,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				0477880321E3842900FDBD8D /* Today.appex in Embed App Extensions */,
 				047787E821E3826800FDBD8D /* PacketTunnel.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -126,6 +139,13 @@
 		047787E521E3826800FDBD8D /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		047787EE21E3838300FDBD8D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		047787F021E3839E00FDBD8D /* Shadowrocket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shadowrocket.entitlements; sourceTree = "<group>"; };
+		047787F621E3842900FDBD8D /* Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		047787F721E3842900FDBD8D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		047787FA21E3842900FDBD8D /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		047787FB21E3842900FDBD8D /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		047787FE21E3842900FDBD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0477880021E3842900FDBD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0477880721E3842C00FDBD8D /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Today.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +175,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		047787F321E3842900FDBD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787F821E3842900FDBD8D /* NotificationCenter.framework in Frameworks */,
+				0477880821E3843C00FDBD8D /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -164,6 +193,7 @@
 				0477877C21E381D500FDBD8D /* Shadowrocket */,
 				0477879621E381D500FDBD8D /* ShadowrocketDylib */,
 				047787E021E3826800FDBD8D /* PacketTunnel */,
+				047787F921E3842900FDBD8D /* Today */,
 				0477878F21E381D500FDBD8D /* Frameworks */,
 				0477877B21E381D500FDBD8D /* Products */,
 			);
@@ -175,6 +205,7 @@
 				0477877A21E381D500FDBD8D /* Shadowrocket.app */,
 				0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */,
 				047787DF21E3826800FDBD8D /* PacketTunnel.appex */,
+				047787F621E3842900FDBD8D /* Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +254,7 @@
 				0477879021E381D500FDBD8D /* JavaScriptCore.framework */,
 				0477879221E381D500FDBD8D /* Foundation.framework */,
 				0477879421E381D500FDBD8D /* UIKit.framework */,
+				047787F721E3842900FDBD8D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,6 +359,18 @@
 			path = PacketTunnel;
 			sourceTree = "<group>";
 		};
+		047787F921E3842900FDBD8D /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				0477880721E3842C00FDBD8D /* Today.entitlements */,
+				047787FA21E3842900FDBD8D /* TodayViewController.h */,
+				047787FB21E3842900FDBD8D /* TodayViewController.m */,
+				047787FD21E3842900FDBD8D /* MainInterface.storyboard */,
+				0477880021E3842900FDBD8D /* Info.plist */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -364,6 +408,7 @@
 			dependencies = (
 				0477878E21E381D500FDBD8D /* PBXTargetDependency */,
 				047787E721E3826800FDBD8D /* PBXTargetDependency */,
+				0477880221E3842900FDBD8D /* PBXTargetDependency */,
 			);
 			name = Shadowrocket;
 			productName = Shadowrocket;
@@ -404,6 +449,24 @@
 			name = PacketTunnel;
 			productName = PacketTunnel;
 			productReference = 047787DF21E3826800FDBD8D /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		047787F521E3842900FDBD8D /* Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0477880421E3842900FDBD8D /* Build configuration list for PBXNativeTarget "Today" */;
+			buildPhases = (
+				047787F221E3842900FDBD8D /* Sources */,
+				047787F321E3842900FDBD8D /* Frameworks */,
+				047787F421E3842900FDBD8D /* Resources */,
+				0477880921E3846300FDBD8D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Today;
+			productName = Today;
+			productReference = 047787F621E3842900FDBD8D /* Today.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -449,6 +512,20 @@
 							};
 						};
 					};
+					047787F521E3842900FDBD8D = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 0477877221E381D500FDBD8D /* Build configuration list for PBXProject "Shadowrocket" */;
@@ -457,6 +534,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0477876E21E381D500FDBD8D;
 			productRefGroup = 0477877B21E381D500FDBD8D /* Products */;
@@ -466,6 +544,7 @@
 				0477877921E381D500FDBD8D /* Shadowrocket */,
 				0477878A21E381D500FDBD8D /* ShadowrocketDylib */,
 				047787DE21E3826800FDBD8D /* PacketTunnel */,
+				047787F521E3842900FDBD8D /* Today */,
 			);
 		};
 /* End PBXProject section */
@@ -483,6 +562,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047787F421E3842900FDBD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787FF21E3842900FDBD8D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +644,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\ncp -R -H \"${SRCROOT}/${PROJECT_NAME}/TargetApp/Plugins/${PRODUCT_NAME}.appex\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleIdentifier ${PRODUCT_BUNDLE_IDENTIFIER}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex/Info.plist\"\n";
 		};
+		0477880921E3846300FDBD8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\ncp -R -H \"${SRCROOT}/${PROJECT_NAME}/TargetApp/Plugins/${PRODUCT_NAME}.appex\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleIdentifier ${PRODUCT_BUNDLE_IDENTIFIER}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex/Info.plist\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -598,6 +702,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		047787F221E3842900FDBD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787FC21E3842900FDBD8D /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -611,7 +723,23 @@
 			target = 047787DE21E3826800FDBD8D /* PacketTunnel */;
 			targetProxy = 047787E621E3826800FDBD8D /* PBXContainerItemProxy */;
 		};
+		0477880221E3842900FDBD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047787F521E3842900FDBD8D /* Today */;
+			targetProxy = 0477880121E3842900FDBD8D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		047787FD21E3842900FDBD8D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047787FE21E3842900FDBD8D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		047787D321E381D500FDBD8D /* Debug */ = {
@@ -928,6 +1056,46 @@
 			};
 			name = Release;
 		};
+		0477880521E3842900FDBD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68B3H97TK;
+				INFOPLIST_FILE = Today/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjackc.Shadowrocket.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0477880621E3842900FDBD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68B3H97TK;
+				INFOPLIST_FILE = Today/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjackc.Shadowrocket.Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -963,6 +1131,15 @@
 			buildConfigurations = (
 				047787EA21E3826800FDBD8D /* Debug */,
 				047787EB21E3826800FDBD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0477880421E3842900FDBD8D /* Build configuration list for PBXNativeTarget "Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0477880521E3842900FDBD8D /* Debug */,
+				0477880621E3842900FDBD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

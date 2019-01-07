@@ -44,6 +44,7 @@
 		047787FF21E3842900FDBD8D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047787FD21E3842900FDBD8D /* MainInterface.storyboard */; };
 		0477880321E3842900FDBD8D /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787F621E3842900FDBD8D /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0477880821E3843C00FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
+		0477880B21E38A0D00FDBD8D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0477880A21E38A0D00FDBD8D /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +107,7 @@
 		0477879021E381D500FDBD8D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		0477879221E381D500FDBD8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0477879421E381D500FDBD8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0477879821E381D500FDBD8D /* ShadowrocketDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = ShadowrocketDylib.xm; path = Logos/ShadowrocketDylib.xm; sourceTree = "<group>"; };
+		0477879821E381D500FDBD8D /* ShadowrocketDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; name = ShadowrocketDylib.xm; path = Logos/ShadowrocketDylib.xm; sourceTree = "<group>"; };
 		0477879921E381D500FDBD8D /* ShadowrocketDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ShadowrocketDylib.mm; path = Logos/ShadowrocketDylib.mm; sourceTree = "<group>"; };
 		0477879C21E381D500FDBD8D /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
 		0477879E21E381D500FDBD8D /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		047787FE21E3842900FDBD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		0477880021E3842900FDBD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0477880721E3842C00FDBD8D /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Today.entitlements; sourceTree = "<group>"; };
+		0477880A21E38A0D00FDBD8D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047787F121E383B500FDBD8D /* NetworkExtension.framework in Frameworks */,
+				0477880B21E38A0D00FDBD8D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +253,7 @@
 		0477878F21E381D500FDBD8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0477880A21E38A0D00FDBD8D /* CloudKit.framework */,
 				047787EE21E3838300FDBD8D /* NetworkExtension.framework */,
 				0477879021E381D500FDBD8D /* JavaScriptCore.framework */,
 				0477879221E381D500FDBD8D /* Foundation.framework */,
@@ -490,7 +494,13 @@
 							com.apple.NetworkExtensions.iOS = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.VPNLite = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};

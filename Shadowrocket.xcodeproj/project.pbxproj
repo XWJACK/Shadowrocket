@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0477878221E381D500FDBD8D /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0477878121E381D500FDBD8D /* MDConfig.plist */; };
+		0477878C21E381D500FDBD8D /* libShadowrocketDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0477879121E381D500FDBD8D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0477879021E381D500FDBD8D /* JavaScriptCore.framework */; };
+		0477879321E381D500FDBD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0477879221E381D500FDBD8D /* Foundation.framework */; };
+		0477879521E381D500FDBD8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0477879421E381D500FDBD8D /* UIKit.framework */; };
+		0477879A21E381D500FDBD8D /* ShadowrocketDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0477879921E381D500FDBD8D /* ShadowrocketDylib.mm */; };
+		0477879D21E381D500FDBD8D /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0477879C21E381D500FDBD8D /* MDConfigManager.h */; };
+		0477879F21E381D500FDBD8D /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477879E21E381D500FDBD8D /* MDConfigManager.m */; };
+		047787A121E381D500FDBD8D /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787A021E381D500FDBD8D /* MDCycriptManager.h */; };
+		047787A321E381D500FDBD8D /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787A221E381D500FDBD8D /* MDCycriptManager.m */; };
+		047787A521E381D500FDBD8D /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787A421E381D500FDBD8D /* MDMethodTrace.h */; };
+		047787A721E381D500FDBD8D /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787A621E381D500FDBD8D /* MDMethodTrace.m */; };
+		047787AA21E381D500FDBD8D /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787A921E381D500FDBD8D /* a1a2-selectortramps-arm.s */; };
+		047787AC21E381D500FDBD8D /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787AB21E381D500FDBD8D /* a1a2-selectortramps-arm64.s */; };
+		047787AE21E381D500FDBD8D /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787AD21E381D500FDBD8D /* a1a2-selectortramps-i386.s */; };
+		047787B021E381D500FDBD8D /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787AF21E381D500FDBD8D /* a1a2-selectortramps-x86_64.s */; };
+		047787B221E381D500FDBD8D /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787B121E381D500FDBD8D /* a2a3-selectortramps-arm.s */; };
+		047787B421E381D500FDBD8D /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787B321E381D500FDBD8D /* a2a3-selectortramps-i386.s */; };
+		047787B621E381D500FDBD8D /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 047787B521E381D500FDBD8D /* a2a3-selectortramps-x86_64.s */; };
+		047787B821E381D500FDBD8D /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787B721E381D500FDBD8D /* OCMethodTrace.h */; };
+		047787BA21E381D500FDBD8D /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787B921E381D500FDBD8D /* OCMethodTrace.m */; };
+		047787BC21E381D500FDBD8D /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787BB21E381D500FDBD8D /* OCSelectorTrampolines.h */; };
+		047787BE21E381D500FDBD8D /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 047787BD21E381D500FDBD8D /* OCSelectorTrampolines.mm */; };
+		047787C221E381D500FDBD8D /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787C121E381D500FDBD8D /* LLDBTools.h */; };
+		047787C421E381D500FDBD8D /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 047787C321E381D500FDBD8D /* LLDBTools.mm */; };
+		047787C921E381D500FDBD8D /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787C821E381D500FDBD8D /* AntiAntiDebug.m */; };
+		047787CC21E381D500FDBD8D /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 047787CB21E381D500FDBD8D /* fishhook.c */; };
+		047787CE21E381D500FDBD8D /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787CD21E381D500FDBD8D /* fishhook.h */; };
+		047787D021E381D500FDBD8D /* ShadowrocketDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 047787CF21E381D500FDBD8D /* ShadowrocketDylib.h */; };
+		047787D221E381D500FDBD8D /* ShadowrocketDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 047787D121E381D500FDBD8D /* ShadowrocketDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0477878D21E381D500FDBD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0477876F21E381D500FDBD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0477878A21E381D500FDBD8D;
+			remoteInfo = ShadowrocketDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0477877721E381D500FDBD8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0477878C21E381D500FDBD8D /* libShadowrocketDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0477877A21E381D500FDBD8D /* Shadowrocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadowrocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0477877D21E381D500FDBD8D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0477877F21E381D500FDBD8D /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		0477878121E381D500FDBD8D /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		0477878421E381D500FDBD8D /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		0477878521E381D500FDBD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libShadowrocketDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0477879021E381D500FDBD8D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0477879221E381D500FDBD8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0477879421E381D500FDBD8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0477879821E381D500FDBD8D /* ShadowrocketDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = ShadowrocketDylib.xm; path = Logos/ShadowrocketDylib.xm; sourceTree = "<group>"; };
+		0477879921E381D500FDBD8D /* ShadowrocketDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ShadowrocketDylib.mm; path = Logos/ShadowrocketDylib.mm; sourceTree = "<group>"; };
+		0477879C21E381D500FDBD8D /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		0477879E21E381D500FDBD8D /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		047787A021E381D500FDBD8D /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		047787A221E381D500FDBD8D /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		047787A421E381D500FDBD8D /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		047787A621E381D500FDBD8D /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		047787A921E381D500FDBD8D /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		047787AB21E381D500FDBD8D /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		047787AD21E381D500FDBD8D /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		047787AF21E381D500FDBD8D /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		047787B121E381D500FDBD8D /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		047787B321E381D500FDBD8D /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		047787B521E381D500FDBD8D /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		047787B721E381D500FDBD8D /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		047787B921E381D500FDBD8D /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		047787BB21E381D500FDBD8D /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		047787BD21E381D500FDBD8D /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		047787BF21E381D500FDBD8D /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		047787C121E381D500FDBD8D /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		047787C321E381D500FDBD8D /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		047787C621E381D500FDBD8D /* ShadowrocketDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShadowrocketDylib-Prefix.pch"; sourceTree = "<group>"; };
+		047787C821E381D500FDBD8D /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		047787CB21E381D500FDBD8D /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		047787CD21E381D500FDBD8D /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		047787CF21E381D500FDBD8D /* ShadowrocketDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowrocketDylib.h; sourceTree = "<group>"; };
+		047787D121E381D500FDBD8D /* ShadowrocketDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowrocketDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0477877421E381D500FDBD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0477878821E381D500FDBD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0477879121E381D500FDBD8D /* JavaScriptCore.framework in Frameworks */,
+				0477879521E381D500FDBD8D /* UIKit.framework in Frameworks */,
+				0477879321E381D500FDBD8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0477876E21E381D500FDBD8D = {
+			isa = PBXGroup;
+			children = (
+				0477877C21E381D500FDBD8D /* Shadowrocket */,
+				0477879621E381D500FDBD8D /* ShadowrocketDylib */,
+				0477878F21E381D500FDBD8D /* Frameworks */,
+				0477877B21E381D500FDBD8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0477877B21E381D500FDBD8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0477877A21E381D500FDBD8D /* Shadowrocket.app */,
+				0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0477877C21E381D500FDBD8D /* Shadowrocket */ = {
+			isa = PBXGroup;
+			children = (
+				0477877D21E381D500FDBD8D /* icon.png */,
+				0477878521E381D500FDBD8D /* Info.plist */,
+				0477877E21E381D500FDBD8D /* Scripts */,
+				0477878021E381D500FDBD8D /* Config */,
+				0477878321E381D500FDBD8D /* TargetApp */,
+			);
+			path = Shadowrocket;
+			sourceTree = "<group>";
+		};
+		0477877E21E381D500FDBD8D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				0477877F21E381D500FDBD8D /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		0477878021E381D500FDBD8D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0477878121E381D500FDBD8D /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		0477878321E381D500FDBD8D /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				0477878421E381D500FDBD8D /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		0477878F21E381D500FDBD8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0477879021E381D500FDBD8D /* JavaScriptCore.framework */,
+				0477879221E381D500FDBD8D /* Foundation.framework */,
+				0477879421E381D500FDBD8D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0477879621E381D500FDBD8D /* ShadowrocketDylib */ = {
+			isa = PBXGroup;
+			children = (
+				047787CF21E381D500FDBD8D /* ShadowrocketDylib.h */,
+				047787D121E381D500FDBD8D /* ShadowrocketDylib.m */,
+				0477879721E381D500FDBD8D /* Logos */,
+				0477879B21E381D500FDBD8D /* Config */,
+				047787A821E381D500FDBD8D /* Trace */,
+				047787C021E381D500FDBD8D /* Tools */,
+				047787C721E381D500FDBD8D /* AntiAntiDebug */,
+				047787CA21E381D500FDBD8D /* fishhook */,
+				047787C521E381D500FDBD8D /* Supporting Files */,
+			);
+			path = ShadowrocketDylib;
+			sourceTree = "<group>";
+		};
+		0477879721E381D500FDBD8D /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				0477879821E381D500FDBD8D /* ShadowrocketDylib.xm */,
+				0477879921E381D500FDBD8D /* ShadowrocketDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		0477879B21E381D500FDBD8D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0477879C21E381D500FDBD8D /* MDConfigManager.h */,
+				0477879E21E381D500FDBD8D /* MDConfigManager.m */,
+				047787A021E381D500FDBD8D /* MDCycriptManager.h */,
+				047787A221E381D500FDBD8D /* MDCycriptManager.m */,
+				047787A421E381D500FDBD8D /* MDMethodTrace.h */,
+				047787A621E381D500FDBD8D /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		047787A821E381D500FDBD8D /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				047787A921E381D500FDBD8D /* a1a2-selectortramps-arm.s */,
+				047787AB21E381D500FDBD8D /* a1a2-selectortramps-arm64.s */,
+				047787AD21E381D500FDBD8D /* a1a2-selectortramps-i386.s */,
+				047787AF21E381D500FDBD8D /* a1a2-selectortramps-x86_64.s */,
+				047787B121E381D500FDBD8D /* a2a3-selectortramps-arm.s */,
+				047787B321E381D500FDBD8D /* a2a3-selectortramps-i386.s */,
+				047787B521E381D500FDBD8D /* a2a3-selectortramps-x86_64.s */,
+				047787B721E381D500FDBD8D /* OCMethodTrace.h */,
+				047787B921E381D500FDBD8D /* OCMethodTrace.m */,
+				047787BB21E381D500FDBD8D /* OCSelectorTrampolines.h */,
+				047787BD21E381D500FDBD8D /* OCSelectorTrampolines.mm */,
+				047787BF21E381D500FDBD8D /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		047787C021E381D500FDBD8D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				047787C121E381D500FDBD8D /* LLDBTools.h */,
+				047787C321E381D500FDBD8D /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		047787C521E381D500FDBD8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047787C621E381D500FDBD8D /* ShadowrocketDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047787C721E381D500FDBD8D /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				047787C821E381D500FDBD8D /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		047787CA21E381D500FDBD8D /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				047787CB21E381D500FDBD8D /* fishhook.c */,
+				047787CD21E381D500FDBD8D /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0477878921E381D500FDBD8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787A121E381D500FDBD8D /* MDCycriptManager.h in Headers */,
+				047787A521E381D500FDBD8D /* MDMethodTrace.h in Headers */,
+				047787CE21E381D500FDBD8D /* fishhook.h in Headers */,
+				047787D021E381D500FDBD8D /* ShadowrocketDylib.h in Headers */,
+				047787C221E381D500FDBD8D /* LLDBTools.h in Headers */,
+				0477879D21E381D500FDBD8D /* MDConfigManager.h in Headers */,
+				047787BC21E381D500FDBD8D /* OCSelectorTrampolines.h in Headers */,
+				047787B821E381D500FDBD8D /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0477877921E381D500FDBD8D /* Shadowrocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047787D821E381D500FDBD8D /* Build configuration list for PBXNativeTarget "Shadowrocket" */;
+			buildPhases = (
+				0477877321E381D500FDBD8D /* Sources */,
+				0477877421E381D500FDBD8D /* Frameworks */,
+				0477877521E381D500FDBD8D /* ShellScript */,
+				0477877621E381D500FDBD8D /* Resources */,
+				0477877721E381D500FDBD8D /* CopyFiles */,
+				0477877821E381D500FDBD8D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0477878E21E381D500FDBD8D /* PBXTargetDependency */,
+			);
+			name = Shadowrocket;
+			productName = Shadowrocket;
+			productReference = 0477877A21E381D500FDBD8D /* Shadowrocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0477878A21E381D500FDBD8D /* ShadowrocketDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047787D521E381D500FDBD8D /* Build configuration list for PBXNativeTarget "ShadowrocketDylib" */;
+			buildPhases = (
+				0477878621E381D500FDBD8D /* ShellScript */,
+				0477878721E381D500FDBD8D /* Sources */,
+				0477878821E381D500FDBD8D /* Frameworks */,
+				0477878921E381D500FDBD8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShadowrocketDylib;
+			productName = ShadowrocketDylib;
+			productReference = 0477878B21E381D500FDBD8D /* libShadowrocketDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0477876F21E381D500FDBD8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = XWJACK;
+				TargetAttributes = {
+					0477877921E381D500FDBD8D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0477878A21E381D500FDBD8D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0477877221E381D500FDBD8D /* Build configuration list for PBXProject "Shadowrocket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0477876E21E381D500FDBD8D;
+			productRefGroup = 0477877B21E381D500FDBD8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0477877921E381D500FDBD8D /* Shadowrocket */,
+				0477878A21E381D500FDBD8D /* ShadowrocketDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0477877621E381D500FDBD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0477878221E381D500FDBD8D /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0477877521E381D500FDBD8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		0477877821E381D500FDBD8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		0477878621E381D500FDBD8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0477877321E381D500FDBD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0477878721E381D500FDBD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047787A321E381D500FDBD8D /* MDCycriptManager.m in Sources */,
+				047787AC21E381D500FDBD8D /* a1a2-selectortramps-arm64.s in Sources */,
+				047787AA21E381D500FDBD8D /* a1a2-selectortramps-arm.s in Sources */,
+				047787D221E381D500FDBD8D /* ShadowrocketDylib.m in Sources */,
+				047787B021E381D500FDBD8D /* a1a2-selectortramps-x86_64.s in Sources */,
+				047787BA21E381D500FDBD8D /* OCMethodTrace.m in Sources */,
+				0477879F21E381D500FDBD8D /* MDConfigManager.m in Sources */,
+				047787CC21E381D500FDBD8D /* fishhook.c in Sources */,
+				047787C921E381D500FDBD8D /* AntiAntiDebug.m in Sources */,
+				047787BE21E381D500FDBD8D /* OCSelectorTrampolines.mm in Sources */,
+				047787AE21E381D500FDBD8D /* a1a2-selectortramps-i386.s in Sources */,
+				047787B421E381D500FDBD8D /* a2a3-selectortramps-i386.s in Sources */,
+				047787B221E381D500FDBD8D /* a2a3-selectortramps-arm.s in Sources */,
+				0477879A21E381D500FDBD8D /* ShadowrocketDylib.mm in Sources */,
+				047787C421E381D500FDBD8D /* LLDBTools.mm in Sources */,
+				047787B621E381D500FDBD8D /* a2a3-selectortramps-x86_64.s in Sources */,
+				047787A721E381D500FDBD8D /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0477878E21E381D500FDBD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0477878A21E381D500FDBD8D /* ShadowrocketDylib */;
+			targetProxy = 0477878D21E381D500FDBD8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		047787D321E381D500FDBD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		047787D421E381D500FDBD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047787D621E381D500FDBD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShadowrocketDylib/ShadowrocketDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libShadowrocketDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ShadowrocketDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		047787D721E381D500FDBD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShadowrocketDylib/ShadowrocketDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libShadowrocketDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ShadowrocketDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047787D921E381D500FDBD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Shadowrocket/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjack.Shadowrocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047787DA21E381D500FDBD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Shadowrocket/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwjack.Shadowrocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0477877221E381D500FDBD8D /* Build configuration list for PBXProject "Shadowrocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047787D321E381D500FDBD8D /* Debug */,
+				047787D421E381D500FDBD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047787D521E381D500FDBD8D /* Build configuration list for PBXNativeTarget "ShadowrocketDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047787D621E381D500FDBD8D /* Debug */,
+				047787D721E381D500FDBD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047787D821E381D500FDBD8D /* Build configuration list for PBXNativeTarget "Shadowrocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047787D921E381D500FDBD8D /* Debug */,
+				047787DA21E381D500FDBD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0477876F21E381D500FDBD8D /* Project object */;
+}

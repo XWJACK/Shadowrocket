@@ -74,7 +74,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.xwjackc.Shadowrocket</string>
+	<string>com.liguangming.Shadowrocket</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

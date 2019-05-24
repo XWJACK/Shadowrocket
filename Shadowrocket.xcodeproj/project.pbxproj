@@ -42,13 +42,13 @@
 		047787FF21E3842900FDBD8D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047787FD21E3842900FDBD8D /* MainInterface.storyboard */; };
 		0477880821E3843C00FDBD8D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047787EE21E3838300FDBD8D /* NetworkExtension.framework */; };
 		0477880B21E38A0D00FDBD8D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0477880A21E38A0D00FDBD8D /* CloudKit.framework */; };
-		04993CBF228C349900252020 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787DF21E3826800FDBD8D /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		04993CC0228C349900252020 /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787F621E3842900FDBD8D /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		04A0EEE0228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A0EEDE228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.h */; };
-		04A0EEE1228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EEDF228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.m */; };
 		04A0EEE4228BEF6500DE776F /* ReverseMethodHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A0EEE2228BEF6500DE776F /* ReverseMethodHelper.h */; };
 		04A0EEE5228BEF6500DE776F /* ReverseMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EEE3228BEF6500DE776F /* ReverseMethodHelper.m */; };
 		04A0EEE7228BF69700DE776F /* Shadowrocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0EEE6228BF69700DE776F /* Shadowrocket.m */; };
+		04F156B82297D0F900FFF603 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787DF21E3826800FDBD8D /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04F156BB2297D0F900FFF603 /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 047787F621E3842900FDBD8D /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04F156C22297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F156C02297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.h */; };
+		04F156C32297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F156C12297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +59,14 @@
 			remoteGlobalIDString = 0477878A21E381D500FDBD8D;
 			remoteInfo = ShadowrocketDylib;
 		};
-		047787E621E3826800FDBD8D /* PBXContainerItemProxy */ = {
+		04F156B92297D0F900FFF603 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0477876F21E381D500FDBD8D /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 047787DE21E3826800FDBD8D;
 			remoteInfo = PacketTunnel;
 		};
-		0477880121E3842900FDBD8D /* PBXContainerItemProxy */ = {
+		04F156BC2297D0F900FFF603 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0477876F21E381D500FDBD8D /* Project object */;
 			proxyType = 1;
@@ -86,14 +86,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		047787EC21E3826800FDBD8D /* Embed App Extensions */ = {
+		04F156BE2297D0F900FFF603 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				04993CBF228C349900252020 /* PacketTunnel.appex in Embed App Extensions */,
-				04993CC0228C349900252020 /* Today.appex in Embed App Extensions */,
+				04F156BB2297D0F900FFF603 /* Today.appex in Embed App Extensions */,
+				04F156B82297D0F900FFF603 /* PacketTunnel.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,11 +150,12 @@
 		0477880021E3842900FDBD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0477880721E3842C00FDBD8D /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Today.entitlements; sourceTree = "<group>"; };
 		0477880A21E38A0D00FDBD8D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		04A0EEDE228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NETunnelProviderProtocol+XWJACK.h"; sourceTree = "<group>"; };
-		04A0EEDF228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NETunnelProviderProtocol+XWJACK.m"; sourceTree = "<group>"; };
 		04A0EEE2228BEF6500DE776F /* ReverseMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseMethodHelper.h; sourceTree = "<group>"; };
 		04A0EEE3228BEF6500DE776F /* ReverseMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseMethodHelper.m; sourceTree = "<group>"; };
 		04A0EEE6228BF69700DE776F /* Shadowrocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shadowrocket.m; sourceTree = "<group>"; };
+		04F156BF2297D1F900FFF603 /* plugin.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = plugin.sh; path = Scripts/plugin.sh; sourceTree = "<group>"; };
+		04F156C02297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLWServerNotify_XWJACK.h"; sourceTree = "<group>"; };
+		04F156C12297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLWServerNotify_XWJACK.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				0477877F21E381D500FDBD8D /* quick-resign.sh */,
+				04F156BF2297D1F900FFF603 /* plugin.sh */,
 			);
 			name = Scripts;
 			sourceTree = "<group>";
@@ -276,8 +278,8 @@
 				04A0EEE6228BF69700DE776F /* Shadowrocket.m */,
 				04A0EEE2228BEF6500DE776F /* ReverseMethodHelper.h */,
 				04A0EEE3228BEF6500DE776F /* ReverseMethodHelper.m */,
-				04A0EEDE228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.h */,
-				04A0EEDF228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.m */,
+				04F156C02297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.h */,
+				04F156C12297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.m */,
 				0477879721E381D500FDBD8D /* Logos */,
 				0477879B21E381D500FDBD8D /* Config */,
 				047787A821E381D500FDBD8D /* Trace */,
@@ -392,8 +394,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F156C22297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.h in Headers */,
 				04A0EEE4228BEF6500DE776F /* ReverseMethodHelper.h in Headers */,
-				04A0EEE0228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.h in Headers */,
 				047787A121E381D500FDBD8D /* MDCycriptManager.h in Headers */,
 				047787A521E381D500FDBD8D /* MDMethodTrace.h in Headers */,
 				047787CE21E381D500FDBD8D /* fishhook.h in Headers */,
@@ -416,15 +418,15 @@
 				0477877521E381D500FDBD8D /* Run Script */,
 				0477877621E381D500FDBD8D /* Resources */,
 				0477877721E381D500FDBD8D /* CopyFiles */,
+				04F156BE2297D0F900FFF603 /* Embed App Extensions */,
 				0477877821E381D500FDBD8D /* ShellScript */,
-				047787EC21E3826800FDBD8D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0477878E21E381D500FDBD8D /* PBXTargetDependency */,
-				047787E721E3826800FDBD8D /* PBXTargetDependency */,
-				0477880221E3842900FDBD8D /* PBXTargetDependency */,
+				04F156BA2297D0F900FFF603 /* PBXTargetDependency */,
+				04F156BD2297D0F900FFF603 /* PBXTargetDependency */,
 			);
 			name = Shadowrocket;
 			productName = Shadowrocket;
@@ -456,7 +458,7 @@
 				047787DB21E3826800FDBD8D /* Sources */,
 				047787DC21E3826800FDBD8D /* Frameworks */,
 				047787DD21E3826800FDBD8D /* Resources */,
-				047787ED21E3833400FDBD8D /* ShellScript */,
+				047787ED21E3833400FDBD8D /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -650,7 +652,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
 		};
-		047787ED21E3833400FDBD8D /* ShellScript */ = {
+		047787ED21E3833400FDBD8D /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -659,13 +661,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\ncp -R -H \"${SRCROOT}/${PROJECT_NAME}/TargetApp/Plugins/${PRODUCT_NAME}.appex\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleIdentifier ${PRODUCT_BUNDLE_IDENTIFIER}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex/Info.plist\"\n";
+			shellScript = "${SRCROOT}/${PROJECT_NAME}/Scripts/plugin.sh\n";
 		};
 		0477880921E3846300FDBD8D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -682,7 +685,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\ncp -R -H \"${SRCROOT}/${PROJECT_NAME}/TargetApp/Plugins/${PRODUCT_NAME}.appex\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex\"\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleIdentifier ${PRODUCT_BUNDLE_IDENTIFIER}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.appex/Info.plist\"\n";
+			shellScript = "${SRCROOT}/${PROJECT_NAME}/Scripts/plugin.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -705,7 +708,6 @@
 				047787BA21E381D500FDBD8D /* OCMethodTrace.m in Sources */,
 				0477879F21E381D500FDBD8D /* MDConfigManager.m in Sources */,
 				047787CC21E381D500FDBD8D /* fishhook.c in Sources */,
-				04A0EEE1228BEEE400DE776F /* NETunnelProviderProtocol+XWJACK.m in Sources */,
 				047787C921E381D500FDBD8D /* AntiAntiDebug.m in Sources */,
 				04A0EEE5228BEF6500DE776F /* ReverseMethodHelper.m in Sources */,
 				047787BE21E381D500FDBD8D /* OCSelectorTrampolines.mm in Sources */,
@@ -714,6 +716,7 @@
 				047787B221E381D500FDBD8D /* a2a3-selectortramps-arm.s in Sources */,
 				047787C421E381D500FDBD8D /* LLDBTools.mm in Sources */,
 				047787B621E381D500FDBD8D /* a2a3-selectortramps-x86_64.s in Sources */,
+				04F156C32297DD4400FFF603 /* NSObject+DLWServerNotify_XWJACK.m in Sources */,
 				047787A721E381D500FDBD8D /* MDMethodTrace.m in Sources */,
 				04A0EEE7228BF69700DE776F /* Shadowrocket.m in Sources */,
 			);
@@ -743,15 +746,15 @@
 			target = 0477878A21E381D500FDBD8D /* ShadowrocketDylib */;
 			targetProxy = 0477878D21E381D500FDBD8D /* PBXContainerItemProxy */;
 		};
-		047787E721E3826800FDBD8D /* PBXTargetDependency */ = {
+		04F156BA2297D0F900FFF603 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 047787DE21E3826800FDBD8D /* PacketTunnel */;
-			targetProxy = 047787E621E3826800FDBD8D /* PBXContainerItemProxy */;
+			targetProxy = 04F156B92297D0F900FFF603 /* PBXContainerItemProxy */;
 		};
-		0477880221E3842900FDBD8D /* PBXTargetDependency */ = {
+		04F156BD2297D0F900FFF603 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 047787F521E3842900FDBD8D /* Today */;
-			targetProxy = 0477880121E3842900FDBD8D /* PBXContainerItemProxy */;
+			targetProxy = 04F156BC2297D0F900FFF603 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1007,7 +1010,7 @@
 				INFOPLIST_FILE = Shadowrocket/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
-				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
 				MONKEYDEV_TARGET_APP = Optional;
@@ -1029,7 +1032,7 @@
 				INFOPLIST_FILE = Shadowrocket/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
-				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
 				MONKEYDEV_TARGET_APP = Optional;

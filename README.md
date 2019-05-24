@@ -22,6 +22,10 @@ Install [MonkeyDev](https://github.com/AloneMonkey/MonkeyDev) first!
 PacketTunnel won't response when connected.
 ```
 
+- [ ] 无法加载之前的配置数据
+- [ ] 回到前台会崩溃（暂时通过hook -[DLWServerNotify notify]解决）
+- [ ] 建立连接后PacketTunnel会出现无法响应
+
 # Potatso
 
 Using [Potatso](https://github.com/XWJACK/iShadowsocksR) instead.

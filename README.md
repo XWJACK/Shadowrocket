@@ -30,3 +30,10 @@ PacketTunnel won't response when connected.
 
 Using [Potatso](https://github.com/XWJACK/iShadowsocksR) instead.
 
+# Shadowrocket
+
+由于本项目仅做学习使用，由于本人时间有限，破解不完全，对此给大家推荐一个地址，亲测可以使用。
+
+[用Safari打开](https://shadowsocks-help.github.io/ios/)下载安装，根据提示输入提供的Apple ID账号和密码，成功之后再进入设置把Apple ID账号再换成自己的就OK了。
+
+
